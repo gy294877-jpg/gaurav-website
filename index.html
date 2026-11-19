@@ -1,3 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gaurav Study Hub</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f1f5fb;color:#17243b}
+header{background:#173d75;color:white;text-align:center;padding:25px 12px}
+header h1{margin:0;font-size:27px}
+header p{margin:8px 0 0}
+nav{background:#102d56;padding:13px;text-align:center}
+nav a{color:white;text-decoration:none;margin:7px;font-size:14px}
+.container{max-width:950px;margin:auto;padding:15px}
+.card{background:white;padding:18px;border-radius:12px;margin:14px 0;box-shadow:0 2px 9px #0001}
+h2{color:#173d75}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+button{background:#173d75;color:white;border:0;padding:12px;border-radius:8px;cursor:pointer}
+input,select{width:100%;padding:12px;margin:7px 0;border:1px solid #ccd3df;border-radius:7px}
+footer{background:#102d56;color:white;text-align:center;padding:20px}
+.small{font-size:13px;color:#68758a}
+@media(max-width:500px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Gaurav Study Hub</h1>
+<p>Learn • Practice • Succeed</p>
+<p>कक्षा 5 से 10 तक मुफ्त पढ़ाई</p>
+</header>
+
+<nav>
+<a href="#classes">Classes</a>
+<a href="#study">Study</a>
+<a href="#login">Login</a>
+<a href="#admin">Admin</a>
+</nav>
+
+<main class="container">
+
+<section class="card" id="classes">
+<h2>अपनी कक्षा चुनें</h2>
+<div class="grid">
+<button onclick="chooseClass(5)">Class 5</button>
+<button onclick="chooseClass(6)">Class 6</button>
+<button onclick="chooseClass(7)">Class 7</button>
+<button onclick="chooseClass(8)">Class 8</button>
+<button onclick="chooseClass(9)">Class 9</button>
+<button onclick="chooseClass(10)">Class 10</button>
+</div>
+<p id="selectedClass">अपनी कक्षा चुनें।</p>
+</section>
+
+<section class="card" id="study">
+<h2>Study Material</h2>
+<div class="grid">
+<div class="card">📅 <b>Time Table</b><p>पढ़ाई का समय</p></div>
+<div class="card">📚 <b>Notes & PDF</b><p>नोट्स और किताबें</p></div>
+<div class="card">📝 <b>Test Papers</b><p>अभ्यास प्रश्न</p></div>
+<div class="card">🎥 <b>Video Classes</b><p>वीडियो पाठ</p></div>
+<div class="card">🧠 <b>Online Quiz</b><p>ज्ञान की जाँच</p></div>
+<div class="card">🎓 <b>Syllabus</b><p>पाठ्यक्रम</p></div>
+</div>
+</section>
+
+<section class="card" id="login">
+<h2>Student Login</h2>
+<p class="small">यह अभी डेमो डिजाइन है। असली सुरक्षित लॉगिन बाद में जोड़ा जाएगा।</p>
+<input type="tel" placeholder="मोबाइल नंबर">
+<input type="password" placeholder="पासवर्ड">
+<button onclick="alert('असली लॉगिन सिस्टम अभी जोड़ा जाना बाकी है।')">Login</button>
+</section>
+
+<section class="card">
+<h2>नया Student Account</h2>
+<input type="text" placeholder="विद्यार्थी का नाम">
+<input type="tel" placeholder="मोबाइल नंबर">
+<select>
+<option>कक्षा चुनें</option>
+<option>Class 5</option>
+<option>Class 6</option>
+<option>Class 7</option>
+<option>Class 8</option>
+<option>Class 9</option>
+<option>Class 10</option>
+</select>
+<input type="password" placeholder="पासवर्ड">
+<button onclick="alert('अकाउंट बनाने के लिए सुरक्षित Database जरूरी है।')">Register</button>
+</section>
+
+<section class="card" id="admin">
+<h2>Admin Dashboard</h2>
+<p><b>Total Students:</b> अभी उपलब्ध नहीं</p>
+<p>Notes, PDF और Timetable मैनेज करने की सुविधा आगे जोड़ी जाएगी।</p>
+<p class="small">Admin Login और सही Student Count के लिए सुरक्षित Database जरूरी है।</p>
+</section>
+
+</main>
+
+<footer>
+<p>© 2026 Gaurav Study Hub</p>
+<p>Free Education For Everyone</p>
+</footer>
+
+<script>
+function chooseClass(n){
+document.getElementById("selectedClass").innerText=
+"आपने Class "+n+" चुनी है।";
+}
+</script>
+
+</body>
+</html>
+0
 <!DOCTYPE html>
 <html>
 <head>
